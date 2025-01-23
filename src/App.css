@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles for the task list container */
+.task-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.task-list h2 {
+  const [tasks, setTasks] = useState([]);
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Task card styling */
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #bbb0b0;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.task-card:hover {
+  background-color: #f1f1f1;
+}
+
+/* Task text styling */
+.task-card .task-text {
+  font-size: 1rem;
+  color: #130e0e;
+}
+
+/* Button styles for completion and deletion */
+.task-card button {
+  background-color: #da0d0d;
+  color: #0c0707;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-card button:hover {
+  background-color: #ff3333;
+}
+
+.task-card button.complete {
+  background-color: #080a08;
+  margin-right: 10px;
+}
+
+.task-card button.complete:hover {
+  background-color: #33b533;
+}
+
+/* Task form styling */
+.task-form {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+n .task-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid hsl(253, 64%, 63%);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 150px;
+}
+min-height: 100vh;
+.task-form button {
+  background-color: #3700ff;
+  color: #1d1111;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Filter styling */
+.filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter button {
+  background-color: #0a0202;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter button.active {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #0056b3;
+}
+
+.filter button:hover {
+  background-color: #dddddd;
+}
+
+input {
+  width: 300px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  text-align: center; /* Centers placeholder horizontally */
+  vertical-align: middle; /* Ensures text aligns in a middle-like manner */
+  line-height: 50px; /* Matches the height of the input */
+  font-size: 16px;
+}
+
+input::placeholder {
+  text-align: center; /* Ensures placeholder is horizontally centered */
+  color: #888; /* Adjust placeholder color if needed */
+}
