@@ -1,7 +1,1 @@
-# task-manager
-
-# React + Vite
-
-# Your local changes to README.md
-
-# Remote changes to README.md
+an app to manage your task that uses react
